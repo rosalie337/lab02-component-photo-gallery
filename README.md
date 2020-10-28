@@ -1,0 +1,1 @@
+# lab02-component-photo-gallery
