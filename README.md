@@ -1,67 +1,70 @@
-# LAB 02: Horned Creatures Gallery with Filter
-===
+# Getting Started with Create React App
 
-Create a photo gallery app.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Image Data
+## Available Scripts
 
-Use the supplied images data file at `data.js`
+In the project directory, you can run:
 
-## Component Tree
+### `npm start`
 
-- `App`
-    - `Header`
-    - `ImageList (stretch)` (with a select dropdown)
-        - [`ImageItem`]
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## 1. Build Out Basic App Structure
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-- `App.js` - top level component. App.js imports the horned creatures data and passes it to `ImageList (stretch).js`
-- `Header.js` - header component
-- `ImageList (stretch).js` - image list component
-    - `ImageItem.js` - image item component
+### `npm test`
 
-Build out basic tree of app, starting at top and working down. The `App` component should introduce the image list data, passing as a prop to `ImageList (stretch)`. 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Initially, `ImageList (stretch)` component can just show count of images so you know it is receiving the data via props.
+### `npm run build`
 
-**Time to git ACP!**
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 3. Create `ImageItem` Children in `ImageList`
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- `ImageList.js`
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Map over `this.props.images` and create/render and `ImageItem` for each image in the array.
+### `npm run eject`
 
-**Time to git ACP!**
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## 4. Filter Images
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- `App.js`
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-In the `render` method of `App.js`, filter through the image data, based on the current state of a dropdown. This dropdown allows users to filter by keyword.
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-**Time to git ACP!**
+## Learn More
 
-## STRETCH: Add second filter for number of horns.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-This state will need to be tracked separately. Add more data points and more filters for more, more, more points (up to 3)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## STRETCH: Derive Keywords from Data
+### Code Splitting
 
-When filtering, derive unique keywords from the data and use that to create the `select` `options` using a `.map` operation on the unique list of keywords. (hint: `Object.keys` will give you a list of all the keys).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-**Time to git ACP!**
+### Analyzing the Bundle Size
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## Points Break Down
+### Making a Progressive Web App
 
-Looking For | Points (10)
-:--|--:
-[ ] `App` and `Header` components, nicely styled | 2
-[ ] Use `.map` to render out a list of `ImageItem` components, nicely styled | 3
-[ ] Working filter with dropdown that filters horned creatures by keyword | 5
-[ ] More filters | +1 each
-[ ] `ImageList` component, nicely styled that takes in `images` as a prop | +1
-[ ] Derive keyword from data | +1
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
