@@ -5,18 +5,21 @@ import Article from './Article.js';
 export default class ImageList extends Component {
     render() {
 
-        const filteredCreatures = this.props.images.filter(() => {
-            // code golf: this.props.wolves.filter((wolf) => !this.state.filter || (wolf.size === this.state.filter))
-            if (!this.props.filter) return true;
+        // const filteredCreatures = this.props.images.filter((image) => {
+            
+        //     if (!this.props.filter) return true;
   
-            if (images.size === this.props.filter) return true;
+        //     if (images.size === this.props.filter) return true;
   
-            return false
-          });
+        //     return false
+        //   });
+
         return (
             <div className="images">
             {
-            filteredCreatures.map(images =>
+            
+            // filteredCreature should be passed here
+            images.map(images =>
             <Article
             picture={images.url}
             name={images.title}
