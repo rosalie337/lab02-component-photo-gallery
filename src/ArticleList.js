@@ -10,7 +10,7 @@ export default class ArticleList extends Component {
             images.map(images =>
             <Article 
             name={images.title}
-            caption={images.decription}
+            caption={images.description}
             keyPhrase={images.keyword}
             hornsNumber={images.horns} />)
         }  
