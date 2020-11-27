@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import images from '../data/unicorn-data'
+import React, { Component } from 'react';
+import images from './data/unicorn-data';
 import Article from './Article.js';
 
 export default class ArticleList extends Component {
@@ -9,6 +9,7 @@ export default class ArticleList extends Component {
         {
             images.map(images =>
             <Article 
+            picture={images.url}
             name={images.title}
             caption={images.description}
             keyPhrase={images.keyword}
