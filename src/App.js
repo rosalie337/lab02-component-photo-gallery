@@ -9,22 +9,22 @@ import images from './data/unicorn-data.js';
 
 
 export default class App extends React.Component {
-state = { 
-    filter:''
+  state = {
+    filter: ''
   }
 
- handleChange = e => {
+  handleChange = e => {
     this.setState({
       filter: e.target.value
     });
   }
   render() {
-    return ( 
+    return (
       <div className="App">
         <h1>Horn Creatures</h1>
         <Header />
-        <DropDown handleChange={this.handleChange}/>
-        <ImageList creatures={images} filter={this.state.filter}/>
+        <DropDown handleChange={this.handleChange} />
+        <ImageList creatures={images} filter={this.state.filter} />
         <Footer />
       </div>
     );

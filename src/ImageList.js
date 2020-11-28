@@ -6,26 +6,26 @@ export default class ImageList extends Component {
     render() {
 
         // const filteredCreatures = this.props.images.filter((image) => {
-            
+
         //     if (!this.props.filter) return true;
-  
+
         //     if (images.size === this.props.filter) return true;
-  
+
         //     return false
         //   });
 
         return (
             <div className="images">
-            {
-            
-            // filteredCreature should be passed here
-            images.map(images =>
-            <Article
-            picture={images.url}
-            name={images.title}
-            caption={images.description}
-            hornsNumber={images.horns} />)
-            }  
+                {
+
+                    // filteredCreature should be passed here
+                    images.filter(img => (img.keyword >= this.props.filter)).map(images =>
+                        <Article
+                            picture={images.url}
+                            name={images.title}
+                            caption={images.description}
+                            hornsNumber={images.horns} />)
+                }
             </div>
         )
     }
